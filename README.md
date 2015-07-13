@@ -1,7 +1,28 @@
 angular-scroll
 ==============
 
-Angular is only dependency (no jQuery). 8K minified or 2K gzipped.
+---
+
+## Eaze Changes
+
+angular-scroll was forked in order to format the module properly for CommonJS use. [See Ben's commits](https://github.com/eaze/angular-scroll/commits/master?author=bendrucker) for details.
+
+## Installing Fork
+
+Latest:
+
+```sh
+$ npm install eaze/angular-scroll
+```
+
+Pin to version:
+
+```sh
+$ npm install eaze/angular-scroll#v0.7.2
+```
+
+---
+
 
 Example
 -------
