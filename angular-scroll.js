@@ -1,3 +1,5 @@
+var angular = require('angular')
+
 /**
   * x is a value between 0 and 1, indicating where in the animation you are.
   */
@@ -10,7 +12,7 @@ var duScrollDefaultEasing = function (x) {
   return 1-Math.pow((1-x)*2, 2)/2;
 };
 
-angular.module('duScroll', [
+module.exports = angular.module('duScroll', [
   'duScroll.scrollspy',
   'duScroll.smoothScroll',
   'duScroll.scrollContainer',
@@ -30,7 +32,8 @@ angular.module('duScroll', [
   //Which events on the container (such as body) should cancel scroll animations
   .value('duScrollCancelOnEvents', 'scroll mousedown mousewheel touchmove keydown')
   //Whether or not to activate the last scrollspy, when page/container bottom is reached
-  .value('duScrollBottomSpy', false);
+  .value('duScrollBottomSpy', false)
+  .name;
 
 
 angular.module('duScroll.scrollHelpers', ['duScroll.requestAnimation'])
