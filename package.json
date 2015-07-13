@@ -44,6 +44,9 @@
     "karma-jasmine": "^0.3.5",
     "protractor": "^1.7.0"
   },
+  "peerDependencies": {
+    "angular": "^1.2.16"
+  },
   "files": [
     "angular-scroll.js"
   ]
